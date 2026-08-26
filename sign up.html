@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Sign Up</h1>
+
+        <form action="./index.html">
+            <label for="First Name">First Name:</label>
+            <input type="text" id="first-name" required>
+            <br>
+            <label for="Last Name">Last Name:</label>
+            <input type="text" id="last-name" required>
+            <br>
+            <lable for="r">gender:</lable><br><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label> 
+            <br>
+            <label for="Date of Birth">Date of Birth:</label>
+            <input type="date" id="date-of-birth" required>
+            <br>
+            <label for="Age">Age:</label>
+            <input type="number" id="age" required>
+            <br>
+            <label for="Gmail">Gmail:</label>
+            <input type="gmail" id="gmail" pattern="[a-z]+[0-9]+@[yahoo|gmail]+\.[at|com|org|in|co|gov]+" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" required title="Password must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters." required>
+            <br>
+            <button type="submit">submit</button>
+        </form>
+    </body>
+</html>
